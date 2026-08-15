@@ -1,0 +1,36 @@
+{
+  "name": "sundaymovies",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "fetch-data": "node --env-file=.env.local scripts/fetch-data.mjs",
+    "refresh:all": "node --env-file=.env.local scripts/fetch-data.mjs --region=all --fresh && npm run refresh:images",
+    "refresh:images": "node --env-file=.env.local scripts/mirror-images.mjs",
+    "refresh:prune": "node scripts/prune-jw-cache.mjs",
+    "refresh:report": "node scripts/refresh-report.mjs",
+    "refresh:check": "node scripts/check-anchors.mjs",
+    "refresh:verify": "node scripts/refresh-verify.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/blob": "^2.3.3",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
