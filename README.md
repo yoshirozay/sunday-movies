@@ -4,6 +4,12 @@ Top-rated movies and TV, filtered to what is actually streaming in your country.
 
 [Website](https://sundaymovies.io) · Next.js · Canada, US, UK, Australia · No account
 
+## Onboarding
+
+Pick the platforms you have. We'll only show you titles you can actually watch.
+
+<p align="center"><img src="docs/screenshots/00-onboarding.png" width="720" alt="US onboarding, which platforms do you have"></p>
+
 ## Home
 
 The hero rotates among the top 25. Watch on [service], plus IMDb.
