@@ -1,0 +1,36 @@
+{
+  "_note": "Anchor smoke-test for the catalog refresh. Each anchor asserts a known-good fact about a stable title; if one breaks after a refresh, the pipeline likely regressed (e.g. the rate-limit bug that silently dropped Ted Lasso from Apple). Run: node scripts/check-anchors.mjs --region=ca. MAINTAIN THIS LIST — titles can legitimately leave a service, so prefer originals and long-tenured staples that rarely rotate, and update entries when reality changes. 'id' is the IMDb tconst (stable key); 'title' is for humans only. 'mustBeOn' = availableOn must include these services. 'mustHaveLink' = must be on the service AND have a non-empty deep link (use for Crave, where dead links are the failure mode).",
+  "ca": [
+    { "id": "tt10986410", "title": "Ted Lasso", "mustBeOn": ["apple"] },
+    { "id": "tt0076759", "title": "Star Wars: Episode IV - A New Hope", "mustBeOn": ["disney"] },
+    { "id": "tt0903747", "title": "Breaking Bad", "mustBeOn": ["netflix"] },
+    { "id": "tt0133093", "title": "The Matrix", "mustBeOn": ["prime"] },
+    { "id": "tt0477348", "title": "No Country for Old Men", "mustHaveLink": ["crave"] },
+    { "id": "tt0306414", "title": "The Wire", "mustHaveLink": ["crave"] }
+  ],
+  "us": [
+    { "id": "tt10986410", "title": "Ted Lasso", "mustHaveLink": ["apple"] },
+    { "id": "tt0903747", "title": "Breaking Bad", "mustHaveLink": ["netflix"] },
+    { "id": "tt0076759", "title": "Star Wars: Episode IV - A New Hope", "mustHaveLink": ["disney"] },
+    { "id": "tt14452776", "title": "The Bear", "mustHaveLink": ["hulu"] },
+    { "id": "tt0306414", "title": "The Wire", "mustHaveLink": ["hbo"] },
+    { "id": "tt0106004", "title": "Frasier", "mustHaveLink": ["paramount"] },
+    { "id": "tt0386676", "title": "The Office", "mustHaveLink": ["peacock"] }
+  ],
+  "gb": [
+    { "id": "tt10986410", "title": "Ted Lasso", "mustHaveLink": ["apple"] },
+    { "id": "tt0903747", "title": "Breaking Bad", "mustHaveLink": ["netflix"] },
+    { "id": "tt0076759", "title": "Star Wars: Episode IV - A New Hope", "mustHaveLink": ["disney"] },
+    { "id": "tt7660850", "title": "Succession", "mustHaveLink": ["now"] },
+    { "id": "tt0141842", "title": "The Sopranos", "mustHaveLink": ["now"] },
+    { "id": "tt1190634", "title": "The Boys", "mustHaveLink": ["prime"] }
+  ],
+  "au": [
+    { "id": "tt10986410", "title": "Ted Lasso", "mustHaveLink": ["apple"] },
+    { "id": "tt0903747", "title": "Breaking Bad", "mustHaveLink": ["stan"] },
+    { "id": "tt0076759", "title": "Star Wars: Episode IV - A New Hope", "mustHaveLink": ["disney"] },
+    { "id": "tt7660850", "title": "Succession", "mustHaveLink": ["hbomax"] },
+    { "id": "tt1190634", "title": "The Boys", "mustHaveLink": ["prime"] },
+    { "id": "tt0106004", "title": "Frasier", "mustHaveLink": ["paramount"] }
+  ]
+}
