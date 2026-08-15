@@ -14,7 +14,7 @@ Pick the platforms you have. We'll only show you titles you can actually watch.
 
 The hero rotates among the top 25. Watch on [service], plus IMDb.
 
-<p align="center"><img src="docs/screenshots/01-home.png" width="720" alt="Home, Die Hard featured"></p>
+<p align="center"><img src="docs/screenshots/01-home.png" width="720" alt="Home, Seven featured"></p>
 
 ## Rails
 
